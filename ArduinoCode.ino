@@ -152,6 +152,7 @@ bool i2CAddrTest(uint8_t addr) {
  return false;
 }
 
+//receives and listens to any data is put through sendUDP()
 void sendUDP(const char *message) {
   udp.beginPacket(host, port);
   udp.print(message);
